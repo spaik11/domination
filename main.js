@@ -1,3 +1,4 @@
+// Part One
 function changeImg(id, url) {
     const imgId = document.querySelector(id);
     imgId.src = url;
@@ -15,10 +16,39 @@ function strikeText() {
 strikeText();
 
 function removeLi() {
-    const lastLi = document.querySelector('ul :last-child');
-    lastLi.remove();
+    document.querySelector('li:last-child').remove();
 }
 
 removeLi();
 removeLi();
+
+// Part Two
+function appendUl(element) {
+    const img = document.createElement(element);
+    const ul = document.querySelector('ul');
+    ul.appendChild(img);
+}
+
+appendUl('img');
+
+function changeImgHeight(img) {
+    img.style.height = '30px';
+}
+
+const findImg = document.querySelector('img');
+changeImgHeight(findImg);
+
+function invisible(element) {
+    element.className = 'invisible';
+}
+
+const findEl = document.querySelector('ol');
+invisible(findEl);
+
+function changeFont(fontSize, id) {
+    const findId = document.querySelector(id);
+    findId.style.fontSize = fontSize;
+}
+
+changeFont('30px', 'h1');
 
