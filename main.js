@@ -13,7 +13,7 @@ function strikeText() {
     firstListItem.style.textDecoration = 'line-through';
 }
 
-strikeText();
+strikeText(); 
 
 function removeLi() {
     document.querySelector('li:last-child').remove();
@@ -52,3 +52,13 @@ function changeFont(fontSize, id) {
 
 changeFont('30px', 'h1');
 
+// Part Three
+function newLiWithText(text) {
+    return innerText = text;
+}
+
+function headerWithText(headerSize, text) {
+    document.createElement(`h${headerSize}`).innerText = text;
+}
+
+headerWithText(3, 'does this work?')
