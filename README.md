@@ -35,3 +35,4 @@ These functions will all take in parameters and use them to make and return node
 2. Test it by placing the return value in a variable and passing it to your append function from Step 1 of Part 2.
 3. Write a function that takes in two strings, one representing a header size and one some text, and returns a new header of that size (e.g., '3' should give you an `<h3>`) with that text in it.
 4. Test it by placing the return value in a variable and passing it to your append function from Step 1 of Part 2.
+    

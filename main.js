@@ -54,8 +54,10 @@ changeFont('30px', 'h1');
 
 // Part Three
 function newLiWithText(text) {
-    return innerText = text;
+    return document.createElement('li').innerText = text;
 }
+
+newLiWithText('what does this do?')
 
 function headerWithText(headerSize, text) {
     document.createElement(`h${headerSize}`).innerText = text;
