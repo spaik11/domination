@@ -24,12 +24,12 @@ removeLi();
 
 // Part Two
 function appendUl(element) {
-    const img = document.createElement(element);
-    const ul = document.querySelector('ul');
-    ul.appendChild(img);
+    document.querySelector('ul').appendChild(element);
 }
 
-appendUl('img');
+const newImg = document.createElement('img');
+newImg.src = 'https://media.giphy.com/media/9xxciSRg2Ugwt76OQB/giphy.gif';
+appendUl(newImg);
 
 function changeImgHeight(img) {
     img.style.height = '30px';
@@ -53,14 +53,22 @@ function changeFont(fontSize, id) {
 changeFont('30px', 'h1');
 
 // Part Three
-function newLiWithText(text) {
-    return document.createElement('li').innerText = text;
+function newLiWithText(todoText) {
+    const newTodo = document.createElement('li')
+    newTodo.innerText = todoText;
+
+    return newTodo;
 }
 
-newLiWithText('what does this do?')
+const newTodo = newLiWithText('hello');
+appendUl(newTodo);
 
 function headerWithText(headerSize, text) {
-    document.createElement(`h${headerSize}`).innerText = text;
+    const header = document.createElement(`h${headerSize}`);
+    header.innerText = text;
+
+    return header;
 }
 
-headerWithText(3, 'does this work?')
+const newHeader = headerWithText(3, 'does this work?')
+appendUl(newHeader);

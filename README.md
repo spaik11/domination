@@ -29,10 +29,9 @@ These functions will take in an HTML Element, complete with all the sub-variable
 
 ### Part Three - Pure Functions Returning Node Elements
 
-These functions will all take in parameters and use them to make and return node elements. They don't do _anything_ to the DOM. So to test them, we'll have to use our earlier side-effect-having functions.
+These functions will all take in parameters and use them to make and return node elements. They don't do _anything_ to the DOM. So to test them, we'll have to use our earlier side-effect-having functions.        
 
 1. Write function that takes in text and returns a new `<li>` with that text as its `innerText`.
 2. Test it by placing the return value in a variable and passing it to your append function from Step 1 of Part 2.
 3. Write a function that takes in two strings, one representing a header size and one some text, and returns a new header of that size (e.g., '3' should give you an `<h3>`) with that text in it.
 4. Test it by placing the return value in a variable and passing it to your append function from Step 1 of Part 2.
-    
