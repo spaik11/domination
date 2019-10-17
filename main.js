@@ -54,7 +54,7 @@ changeFont('30px', 'h1');
 
 // Part Three
 function newLiWithText(todoText) {
-    const newTodo = document.createElement('li')
+    const newTodo = document.createElement('li');
     newTodo.innerText = todoText;
 
     return newTodo;
